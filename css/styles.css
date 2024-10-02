@@ -1,0 +1,311 @@
+/* Reset para navegadores */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}  
+
+/* Imagen de fondo + filtro en negro */
+header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.905), rgba(63, 21, 71, 0.23)), url(../assets/acdcfondo2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Posicionamiento del nav con Flexbox*/
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+nav img {
+    width: 150px;
+}
+
+/* Configuración y diseño de los navbar */
+.nav-bar {
+    flex: 1;
+    text-align: right;
+}
+.nav-bar ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: 0px 2px 8px #FCCA0C;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    text-shadow: 0px 6px 12px #FCCA0C;
+}
+.text-box h1{
+    font-size: 62px;
+}
+
+  .inicio-btn {
+    min-width: 160px;
+    height: 40px;
+    color: #fff;
+    padding: 10px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    background: #d90429;
+    text-decoration: none;
+  }
+  .inicio-btn:hover {
+    background-color: #ef233c;
+  }
+  .inicio-btn:active {
+    top: 2px;
+  }
+nav .fa {
+    display: none;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    text-align: center;
+    padding:30px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.905), rgba(63, 21, 71, 0.23)), url(../assets/footer3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    clear: both;
+}
+footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: large;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0px 2px 8px #FCCA0C;
+}
+
+footer p{
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0px 2px 8px #dee4c1;
+}
+
+.redes-sociales{
+    width: 100%;
+    text-align: center;
+}
+.redes-sociales{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* SUB - HEADER PARA LAS DEMAS SECCIONES*/
+.sub-header{
+    height: 40vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.905), rgba(63, 21, 71, 0.23)), url(../assets/acdcfondo2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+}
+.sub-header h1{
+    margin-top: 60px;
+    font-size: 35px;
+}
+
+/* NOSOTROS*/
+.nosotros-container{
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.905), rgba(63, 21, 71, 0.23)), url(../assets/footer2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center; 
+}
+
+.nosotros-container h2{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10vh;
+    color: #fff;
+    text-shadow: 0px 2px 8px #FCCA0C;
+}
+
+
+.nosotros-container p{
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 0px 2px 8px #FCCA0C;
+    margin-top: 30px;
+}
+
+.nosotros-container img{
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+}
+
+
+/* PRODUCCION*/
+.produccion-container{
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.905), rgba(63, 21, 71, 0.23)), url(../assets/footer3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center; 
+}
+
+.produccion-container h2{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10vh;
+    color: #fff;
+    text-shadow: 0px 2px 8px #FCCA0C;
+}
+
+
+.produccion-container p{
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 0px 2px 8px #FCCA0C;
+    margin-top: 30px;
+}
+
+.produccion-container img{
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+}
+
+.centrado {
+    flex-direction:column;
+}
+
+.centrado p {
+    max-width: 70%;
+    margin: 0 auto;
+    padding-top: 2%;
+}
+
+.reversed {
+    flex-direction: row-reverse;
+}
+
+.reversed img{
+    border-radius: 100px;
+}
+
+.reversed p {
+    padding: 2%;
+}
+
+
+/* OBRAS DESTACADAS*/
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+    background-image: url(../assets/footer3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.galeria-item {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.galeria-item img:hover {
+    transform: scale(1.05);
+}
+
+/* NOTICIAS */
+.noticias-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.905), rgba(63, 21, 71, 0.23)), url(../assets/footer3.jpg);
+}
+
+
+.noticias {
+    padding: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.905), rgba(63, 21, 71, 0.23)), url(../assets/acdcfondo2.jpg);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.noticias h2 {
+    text-align: center;
+    color: #f7f7f7;
+    font-size: 5vh;
+    text-shadow: 0px 2px 8px #FCCA0C;
+}
+
+.noticias-item {
+    background-color: rgb(232, 204, 204);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.noticias-item h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.noticias-item p {
+    margin: 5px 0;
+}
